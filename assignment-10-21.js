@@ -1,7 +1,6 @@
 function arrayMatrix(arr1, arr2) {
   let tempArray;
   let matrixArray = [];
-  let finalMatrix = [];
   let exists = false;
 
   for (arr1Item in arr1) {
@@ -24,9 +23,6 @@ function arrayMatrix(arr1, arr2) {
       tempArray = [arr2[arr2Item], arr1[arr1Item]];
       exists = false;
       for (item in matrixArray) {
-        console.log(`Temp: ${tempArray}`);
-        console.log(`Matrix: ${matrixArray[item]}`);
-        console.log(String(tempArray) === String(matrixArray[item]));
         if (String(tempArray) === String(matrixArray[item])) {
           exists = true;
         }
