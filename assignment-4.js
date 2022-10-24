@@ -12,7 +12,9 @@ function alphabeticalLetters(string) {
     lettersArray.push(combinedString[letter]);
   }
 
-  lettersArray.sort();
+  lettersArray.sort((a, b) => {
+    return a.localeCompare(b, undefined, { sensitivity: "base" });
+  });
 
   for (letter in lettersArray) {
     finalString += lettersArray[letter];
