@@ -23,5 +23,5 @@ function titleCase(string) {
   return titledString;
 }
 
-let myString = "i love lean a lot.";
+let myString = "i love both dogs and cats.";
 console.log(titleCase(myString));
